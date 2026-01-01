@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const navLinks = [
-  { label: 'Suites', href: '#rooms' },
-  { label: 'Experiences', href: '#experiences' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Offers', href: '#offers' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Home', to: '/' },
+  { label: 'Suites', to: '/suites' },
+  { label: 'Experiences', to: '/experiences' },
+  { label: 'Amenities', to: '/amenities' },
+  { label: 'Offers', to: '/offers' },
+  { label: 'Contact', to: '/contact' }
 ];
 
 export default function Navbar() {
@@ -15,26 +17,31 @@ export default function Navbar() {
   const renderedLinks = useMemo(
     () =>
       navLinks.map((item) => (
-        <a
-          key={item.href}
-          className="text-sm font-medium text-slate-800 transition hover:text-ocean-600"
-          href={item.href}
+        <NavLink
+          key={item.to}
+          className={({ isActive }) =>
+            `text-sm font-medium transition ${isActive ? 'text-ocean-600' : 'text-slate-800 hover:text-ocean-600'}`
+          }
+          to={item.to}
+          onClick={() => setIsOpen(false)}
         >
           {item.label}
-        </a>
+        </NavLink>
       )),
     []
   );
 
   return (
-    <header className="sticky top-0 z-30 w-full bg-white/90 backdrop-blur border-b border-sand-100">
+    <header className="sticky top-0 z-30 w-full border-b border-sand-100 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ocean-100 text-ocean-600 font-semibold">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ocean-100 font-semibold text-ocean-600">
             SA
           </div>
           <div className="leading-tight">
-            <div className="font-display text-lg text-slate-900">Seaside Aurora</div>
+            <Link className="font-display text-lg text-slate-900" to="/">
+              Seaside Aurora
+            </Link>
             <div className="text-xs text-slate-500">Hotel & Residences</div>
           </div>
         </div>
@@ -42,12 +49,12 @@ export default function Navbar() {
         <nav className="hidden items-center gap-7 md:flex">{renderedLinks}</nav>
 
         <div className="hidden gap-3 md:flex">
-          <a className="btn-ghost" href="#contact">
+          <Link className="btn-ghost" to="/contact">
             Call concierge
-          </a>
-          <a className="btn-primary" href="#booking">
+          </Link>
+          <Link className="btn-primary" to="/book">
             Plan your stay
-          </a>
+          </Link>
         </div>
 
         <button
@@ -63,9 +70,9 @@ export default function Navbar() {
         <div className="border-t border-sand-100 bg-white px-6 py-4 md:hidden">
           <div className="flex flex-col gap-4">
             {renderedLinks}
-            <a className="btn-primary" href="#booking">
+            <Link className="btn-primary" to="/book" onClick={() => setIsOpen(false)}>
               Plan your stay
-            </a>
+            </Link>
           </div>
         </div>
       )}

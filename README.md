@@ -1,6 +1,6 @@
 # Seaside Aurora Hotel Landing Page
 
-A Vite + React + TypeScript front-end for a luxury coastal hotel landing page. Uses Tailwind CSS for styling and mock JSON endpoints served from `public/api` to simulate API calls for rooms, amenities, offers, and experiences.
+A Vite + React + TypeScript front-end for a luxury coastal hotel experience. Uses Tailwind CSS for styling, React Router for multi-page navigation, and mock JSON endpoints served from `public/api` to simulate API calls for rooms, amenities, offers, and experiences.
 
 ## Getting started
 
@@ -15,9 +15,20 @@ A Vite + React + TypeScript front-end for a luxury coastal hotel landing page. U
    - `npm run build`
    - Preview build: `npm run preview`
 
+## Routes
+
+- `/` — overview with hero, featured suites, experiences, offers, testimonials
+- `/suites` — full suite grid plus booking form
+- `/experiences` — curated experiences
+- `/offers` — seasonal collections
+- `/amenities` — property amenities
+- `/book` — booking form with quick room highlights
+- `/contact` — concierge contact CTA
+
 ## Mock API data
 
 Static JSON lives under `public/api` and is fetched at runtime:
+
 - `rooms.json` — room rates, tags, and highlights
 - `amenities.json` — property amenities
 - `offers.json` — stay collections
@@ -29,7 +40,7 @@ Update these files to change what the page renders. Calls are intentionally dela
 ## Design notes
 
 - Tailwind theme includes custom sand, ocean, and forest palettes plus display/body fonts (Playfair Display, DM Sans).
-- Sections: hero, availability form, suites grid, amenities, experiences, offers, testimonials, and concierge call-to-action.
+- Sections/pages: hero, availability callouts, suites grid, amenities, experiences, offers, testimonials, and concierge call-to-action.
 - Booking form submits to a mock handler that returns a reference code; no backend is required.
 
 ## Project scripts

@@ -1,26 +1,40 @@
+import { Link } from 'react-router-dom';
 import { Room } from '../lib/types';
 import { formatCurrency } from '../lib/format';
 
 type RoomsSectionProps = {
   rooms: Room[];
   loading?: boolean;
+  hideHeader?: boolean;
+  highlightActionLabel?: string;
 };
 
 const skeletons = new Array(3).fill(null);
 
-export default function RoomsSection({ rooms, loading }: RoomsSectionProps) {
+export default function RoomsSection({
+  rooms,
+  loading,
+  hideHeader,
+  highlightActionLabel
+}: RoomsSectionProps) {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16" id="rooms">
-      <div className="flex items-end justify-between">
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-ocean-600">Suites</div>
-          <h2 className="font-display text-3xl text-slate-900">Light-filled rooms by the sea</h2>
-          <p className="text-slate-600">Choose a pace that suits you, from sunrise balconies to quiet garden corners.</p>
+      {!hideHeader && (
+        <div className="flex items-end justify-between">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-wide text-ocean-600">
+              Suites
+            </div>
+            <h2 className="font-display text-3xl text-slate-900">Light-filled rooms by the sea</h2>
+            <p className="text-slate-600">
+              Choose a pace that suits you, from sunrise balconies to quiet garden corners.
+            </p>
+          </div>
+          <Link className="btn-ghost" to="/book">
+            {highlightActionLabel ?? 'Check dates'}
+          </Link>
         </div>
-        <a className="btn-ghost" href="#booking">
-          Check dates
-        </a>
-      </div>
+      )}
 
       <div className="mt-10 grid gap-8 md:grid-cols-2">
         {loading
@@ -49,7 +63,9 @@ export default function RoomsSection({ rooms, loading }: RoomsSectionProps) {
                       </p>
                     </div>
                     <div className="text-right text-sm text-slate-600">
-                      <div className="text-lg font-semibold text-slate-900">{formatCurrency(room.price)}</div>
+                      <div className="text-lg font-semibold text-slate-900">
+                        {formatCurrency(room.price)}
+                      </div>
                       <div>per night</div>
                     </div>
                   </div>
@@ -68,7 +84,9 @@ export default function RoomsSection({ rooms, loading }: RoomsSectionProps) {
                   <ul className="grid grid-cols-2 gap-2 text-sm text-slate-600">
                     {room.highlights.map((item) => (
                       <li key={item} className="flex items-start gap-2">
-                        <span aria-hidden className="mt-1 text-ocean-500">-</span>
+                        <span aria-hidden className="mt-1 text-ocean-500">
+                          -
+                        </span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -76,9 +94,12 @@ export default function RoomsSection({ rooms, loading }: RoomsSectionProps) {
 
                   <div className="flex items-center justify-between border-t border-sand-100 pt-4">
                     <div className="text-sm text-slate-600">Complimentary breakfast included</div>
-                    <a className="text-sm font-semibold text-ocean-600 hover:text-ocean-700" href="#booking">
+                    <Link
+                      className="hover:text-ocean-700 text-sm font-semibold text-ocean-600"
+                      to="/book"
+                    >
                       Hold this room
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>

@@ -1,10 +1,16 @@
+import { Link } from 'react-router-dom';
+
 type HeroProps = {
   onCtaClick?: () => void;
+  secondaryTo?: string;
 };
 
-export default function Hero({ onCtaClick }: HeroProps) {
+export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-sand-50 via-white to-ocean-50" id="top">
+    <section
+      className="relative overflow-hidden bg-gradient-to-br from-sand-50 via-white to-ocean-50"
+      id="top"
+    >
       <div className="absolute inset-0 opacity-20" aria-hidden>
         <div className="absolute left-20 top-24 h-72 w-72 rounded-full bg-ocean-100 blur-3xl" />
         <div className="absolute right-10 top-0 h-64 w-64 rounded-full bg-forest-500/20 blur-3xl" />
@@ -19,18 +25,18 @@ export default function Hero({ onCtaClick }: HeroProps) {
             Seaside Aurora Hotel - crafted stays by the water
           </h1>
           <p className="max-w-2xl text-lg text-slate-600">
-            Suites that open to the horizon, dining that celebrates the tide, and experiences curated
-            by our concierge team. Arrive to calm and leave restored.
+            Suites that open to the horizon, dining that celebrates the tide, and experiences
+            curated by our concierge team. Arrive to calm and leave restored.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="btn-primary" onClick={onCtaClick}>
               Check availability
             </button>
-            <a className="btn-ghost" href="#experiences">
+            <Link className="btn-ghost" to={secondaryTo}>
               Explore experiences
-            </a>
+            </Link>
           </div>
-          <div className="grid grid-cols-3 gap-6 pt-4 text-sm text-slate-600 max-w-xl">
+          <div className="grid max-w-xl grid-cols-3 gap-6 pt-4 text-sm text-slate-600">
             <div>
               <div className="text-2xl font-semibold text-slate-900">24</div>
               bespoke suites
@@ -58,7 +64,9 @@ export default function Hero({ onCtaClick }: HeroProps) {
               />
               <div className="absolute inset-0 flex items-end justify-between bg-gradient-to-t from-slate-900/60 to-transparent p-6 text-white">
                 <div>
-                  <div className="text-sm uppercase tracking-wide text-ocean-100">Signature suite</div>
+                  <div className="text-sm uppercase tracking-wide text-ocean-100">
+                    Signature suite
+                  </div>
                   <div className="text-2xl font-semibold">Aurora Terrace</div>
                   <div className="text-sm text-ocean-50">Breakfast on your private deck</div>
                 </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Offer } from '../lib/types';
 
 type OffersSectionProps = {
@@ -16,9 +17,9 @@ export default function OffersSection({ offers, loading }: OffersSectionProps) {
             Limited collections curated for longer stays and wellness weekends.
           </p>
         </div>
-        <a className="btn-primary" href="#booking">
+        <Link className="btn-primary" to="/book">
           Hold an offer
-        </a>
+        </Link>
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -40,9 +41,9 @@ export default function OffersSection({ offers, loading }: OffersSectionProps) {
                   <h3 className="text-lg font-semibold text-slate-900">{offer.title}</h3>
                   <p className="text-sm text-slate-600">{offer.description}</p>
                 </div>
-                <a className="text-sm font-semibold text-ocean-600" href="#booking">
+                <Link className="text-sm font-semibold text-ocean-600" to="/book">
                   Select -&gt;
-                </a>
+                </Link>
               </article>
             ))}
       </div>
