@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Calendar, Menu, Moon, Phone, Sun, X } from 'lucide-react';
 import { useTheme } from '../lib/ThemeProvider';
 
 const navLinks = [
@@ -50,28 +51,29 @@ export default function Navbar() {
 
         <nav className="hidden items-center gap-7 md:flex">{renderedLinks}</nav>
 
-        <div className="hidden gap-3 md:flex">
+        <div className="hidden items-center gap-3 md:flex">
           <button
             type="button"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-sand-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-soft transition hover:-translate-y-0.5 hover:border-ocean-200 hover:bg-sand-50 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-300"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sand-200 bg-white text-slate-800 shadow-soft transition hover:-translate-y-0.5 hover:border-ocean-200 hover:bg-sand-50 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-300"
             onClick={toggleTheme}
+            aria-label="Toggle theme"
           >
-            {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
           <Link className="btn-ghost" to="/contact">
-            Call concierge
+            <Phone className="h-4 w-4" /> Front desk
           </Link>
           <Link className="btn-primary" to="/book">
-            Plan your stay
+            <Calendar className="h-4 w-4" /> Plan your stay
           </Link>
         </div>
 
         <button
           className="flex h-10 w-10 items-center justify-center rounded-full border border-sand-200 text-slate-700 md:hidden"
-          aria-label="Toggle navigation"
+          aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
           onClick={toggle}
         >
-          <span className="text-sm font-semibold">{isOpen ? 'Close' : 'Menu'}</span>
+          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
@@ -81,16 +83,16 @@ export default function Navbar() {
             {renderedLinks}
             <button
               type="button"
-              className="rounded-full border border-sand-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-soft transition hover:-translate-y-0.5 hover:border-ocean-200 hover:bg-sand-50 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-300"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-sand-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-soft transition hover:-translate-y-0.5 hover:border-ocean-200 hover:bg-sand-50 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-300"
               onClick={() => {
                 toggleTheme();
                 setIsOpen(false);
               }}
             >
-              {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />} Theme
             </button>
             <Link className="btn-primary" to="/book" onClick={() => setIsOpen(false)}>
-              Plan your stay
+              <Calendar className="h-4 w-4" /> Plan your stay
             </Link>
           </div>
         </div>
