@@ -7,13 +7,10 @@ type HeroProps = {
 
 export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroProps) {
   return (
-    <section
-      className="relative overflow-hidden bg-gradient-to-br from-sand-50 via-white to-ocean-50"
-      id="top"
-    >
+    <section className="hero relative overflow-hidden" id="top">
       <div className="absolute inset-0 opacity-20" aria-hidden>
-        <div className="absolute left-20 top-24 h-72 w-72 rounded-full bg-ocean-100 blur-3xl" />
-        <div className="absolute right-10 top-0 h-64 w-64 rounded-full bg-forest-500/20 blur-3xl" />
+        <div className="hero-glow-a absolute left-20 top-24 h-72 w-72 rounded-full blur-3xl" />
+        <div className="hero-glow-b absolute right-10 top-0 h-64 w-64 rounded-full blur-3xl" />
       </div>
 
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-20 pt-12 lg:flex-row lg:items-center lg:gap-16">
