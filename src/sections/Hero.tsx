@@ -52,9 +52,9 @@ export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroP
         <div className="relative z-10 w-full max-w-xl">
           <div className="card-surface overflow-hidden">
             <div className="relative h-[420px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-900/40 via-forest-600/50 to-ocean-600/50" />
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-900/35 via-forest-600/45 to-ocean-600/45" />
               <img
-                src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1500&q=80"
+                src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1600&q=80"
                 alt="Oceanfront suite terrace"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -73,7 +73,7 @@ export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroP
               </div>
             </div>
           </div>
-          <div className="-mt-12 grid grid-cols-3 gap-4 rounded-3xl border border-sand-100 bg-white/90 p-6 shadow-soft backdrop-blur">
+          <div className="mt-6 grid grid-cols-3 gap-4 rounded-3xl border border-sand-100 bg-white/90 p-6 shadow-soft backdrop-blur">
             <div>
               <div className="text-xs uppercase tracking-wide text-slate-500">Concierge</div>
               <div className="text-sm font-semibold text-slate-900">24/7 in-stay messaging</div>
