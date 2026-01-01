@@ -22,6 +22,22 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .btn-primary {
   @apply inline-flex items-center justify-center gap-2 rounded-full bg-ocean-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-ocean-600 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-400;
 }
@@ -154,6 +170,15 @@ a {
   color: #e5e7eb;
   border: 1px solid #334155;
   box-shadow: 0 0 0 1px transparent;
+}
+
+.theme-dark input[type='date']::-webkit-calendar-picker-indicator,
+.theme-dark input[type='datetime-local']::-webkit-calendar-picker-indicator,
+.theme-dark input[type='month']::-webkit-calendar-picker-indicator,
+.theme-dark input[type='time']::-webkit-calendar-picker-indicator,
+.theme-dark input[type='week']::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(1.1);
+  background: transparent;
 }
 
 .theme-dark input::placeholder,
