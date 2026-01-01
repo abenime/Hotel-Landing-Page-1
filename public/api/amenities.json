@@ -1,0 +1,26 @@
+[
+  {
+    "id": "spa",
+    "title": "Aurora Spa",
+    "description": "Thermal suites, hydrotherapy pools, and tailored coastal botanicals for deep restoration.",
+    "icon": "spa"
+  },
+  {
+    "id": "dining",
+    "title": "Tide & Ember Dining",
+    "description": "Seasonal tasting menus with open-fire cooking and ocean produce, paired by our sommeliers.",
+    "icon": "dining"
+  },
+  {
+    "id": "concierge",
+    "title": "Curated Stays",
+    "description": "Private sail charters, sunrise yoga on the dunes, and atelier tours planned by our concierge.",
+    "icon": "concierge"
+  },
+  {
+    "id": "workspace",
+    "title": "Quiet Work Lounges",
+    "description": "Acoustic pods, ocean light, and crafted coffee service for guests working remotely.",
+    "icon": "workspace"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "aurora-suite",
+    "name": "Aurora Signature Suite",
+    "price": 620,
+    "size": "74 m²",
+    "beds": "1 King + Lounge",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    "tags": ["Oceanfront", "Private terrace", "Butler service"],
+    "highlights": ["Panoramic sea view", "In-room breakfast", "Sunken tub"],
+    "availability": "8 rooms available"
+  },
+  {
+    "id": "coastal-king",
+    "name": "Coastal King Retreat",
+    "price": 410,
+    "size": "48 m²",
+    "beds": "1 King",
+    "image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1600&q=80",
+    "tags": ["Sunrise view", "Balcony", "Rain shower"],
+    "highlights": ["Daily turndown", "Pillow menu", "Evening tea"],
+    "availability": "12 rooms available"
+  },
+  {
+    "id": "garden-twin",
+    "name": "Garden Twin Residence",
+    "price": 320,
+    "size": "44 m²",
+    "beds": "2 Twins",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+    "tags": ["Courtyard", "Workspace", "Walk-in shower"],
+    "highlights": ["Quiet wing", "Soft daylight", "Italian linens"],
+    "availability": "6 rooms available"
+  },
+  {
+    "id": "skyline-loft",
+    "name": "Skyline Loft",
+    "price": 540,
+    "size": "62 m²",
+    "beds": "1 King + Daybed",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    "tags": ["Top floor", "City & sea", "Chef's bar"],
+    "highlights": ["Sunset cocktails", "Design lighting", "Acoustic panels"],
+    "availability": "4 rooms available"
+  }
+]

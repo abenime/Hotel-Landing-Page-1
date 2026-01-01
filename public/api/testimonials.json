@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Mara Jensen",
+    "title": "Creative Director",
+    "quote": "The suite felt like a private gallery overlooking the sea. Every detail was intentional and beautifully quiet.",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "name": "Elijah Hart",
+    "title": "Photographer",
+    "quote": "Sunrise yoga on the dunes and slow breakfasts on the terrace made the stay unforgettable.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "name": "Priya Narayan",
+    "title": "Product Lead",
+    "quote": "Loved the balance of calm spaces to work and indulgent dining in the evening.",
+    "rating": 4
+  }
+]

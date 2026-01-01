@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sail",
+    "title": "Private Sail Charter",
+    "description": "Golden-hour sail with onboard sommelier pairings and coastal storytelling.",
+    "duration": "2.5 hours"
+  },
+  {
+    "id": "atelier",
+    "title": "Local Atelier Tour",
+    "description": "Meet ceramicists and textile artists shaping the region's coastal design identity.",
+    "duration": "Half day"
+  },
+  {
+    "id": "wellness",
+    "title": "Dawn Movement & Breath",
+    "description": "Guided movement on the dune deck followed by ocean plunge and herbal tea.",
+    "duration": "75 minutes"
+  }
+]

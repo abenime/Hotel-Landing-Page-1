@@ -1,0 +1,14 @@
+[
+  {
+    "id": "stay-3",
+    "title": "Stay Longer, Save More",
+    "description": "Stay three nights and enjoy a complimentary chef's tasting for two.",
+    "tag": "Seasonal"
+  },
+  {
+    "id": "wellness-weekend",
+    "title": "Wellness Weekends",
+    "description": "Guided coastal hikes, spa hydrotherapy circuit, and daily cold-pressed juices.",
+    "tag": "Retreat"
+  }
+]
