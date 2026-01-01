@@ -19,6 +19,7 @@ A Vite + React + TypeScript front-end for a luxury coastal hotel experience. Use
 
 - `/` — overview with hero, featured suites, experiences, offers, testimonials
 - `/suites` — full suite grid plus booking form
+- `/suites/:roomId` — individual suite detail
 - `/experiences` — curated experiences
 - `/offers` — seasonal collections
 - `/amenities` — property amenities

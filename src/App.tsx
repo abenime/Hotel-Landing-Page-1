@@ -8,6 +8,7 @@ import AmenitiesPage from './pages/AmenitiesPage';
 import BookingPage from './pages/BookingPage';
 import ContactPage from './pages/ContactPage';
 import { HotelDataProvider } from './lib/HotelDataProvider';
+import RoomDetailPage from './pages/RoomDetailPage';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/suites" element={<SuitesPage />} />
+            <Route path="/suites/:roomId" element={<RoomDetailPage />} />
             <Route path="/experiences" element={<ExperiencesPage />} />
             <Route path="/offers" element={<OffersPage />} />
             <Route path="/amenities" element={<AmenitiesPage />} />

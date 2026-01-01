@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Room } from '../lib/types';
 import { formatCurrency } from '../lib/format';
 
@@ -17,6 +17,8 @@ export default function RoomsSection({
   hideHeader,
   highlightActionLabel
 }: RoomsSectionProps) {
+  const navigate = useNavigate();
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-16" id="rooms">
       {!hideHeader && (
@@ -42,7 +44,19 @@ export default function RoomsSection({
               <div key={index} className="card-surface h-[360px] animate-pulse bg-sand-50" />
             ))
           : rooms.map((room) => (
-              <article key={room.id} className="card-surface overflow-hidden shadow-soft">
+              <article
+                key={room.id}
+                className="card-surface overflow-hidden shadow-soft transition hover:-translate-y-1 hover:shadow-xl"
+                role="button"
+                tabIndex={0}
+                onClick={() => navigate(`/suites/${room.id}`)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    navigate(`/suites/${room.id}`);
+                  }
+                }}
+              >
                 <div className="relative h-56">
                   <img
                     src={room.image}
@@ -97,6 +111,7 @@ export default function RoomsSection({
                     <Link
                       className="hover:text-ocean-700 text-sm font-semibold text-ocean-600"
                       to="/book"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       Hold this room
                     </Link>
