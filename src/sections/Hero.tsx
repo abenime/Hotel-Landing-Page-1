@@ -64,7 +64,7 @@ export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroP
                   <div className="text-sm uppercase tracking-wide text-ocean-100">
                     Signature suite
                   </div>
-                  <div className="text-2xl font-semibold">Aurora Terrace</div>
+                  <div className="text-2xl font-semibold">Abenime Terrace</div>
                   <div className="text-sm text-ocean-50">Breakfast on your private deck</div>
                 </div>
                 <div className="rounded-full bg-white/15 px-4 py-2 text-sm font-semibold backdrop-blur">
