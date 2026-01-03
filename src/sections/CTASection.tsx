@@ -8,7 +8,7 @@ export default function CTASection() {
         />
         <div className="space-y-3">
           <div className="text-xs font-semibold uppercase tracking-wide text-ocean-600">
-            Concierge
+            Support
           </div>
           <h2 className="font-display text-3xl text-slate-900">Ready to design your stay</h2>
           <p className="max-w-2xl text-slate-600">
@@ -17,11 +17,11 @@ export default function CTASection() {
           </p>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a className="btn-primary" href="mailto:concierge@seasideAbenime.example">
-            Email concierge
+          <a className="btn-primary" href="mailto:concierge@Abenime.example">
+            Email Contact
           </a>
-          <a className="btn-ghost" href="tel:+18005551234">
-            Call +1 (800) 555-1234
+          <a className="btn-ghost" href="tel:+251906265329">
+            Call +251-906-265-329
           </a>
         </div>
       </div>
