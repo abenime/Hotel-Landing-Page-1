@@ -1,4 +1,4 @@
-# Seaside Aurora Hotel Landing Page
+# Abenime Hotel Landing Page
 
 A Vite + React + TypeScript front-end for a luxury coastal hotel experience. Uses Tailwind CSS for styling, React Router for multi-page navigation, and mock JSON endpoints served from `public/api` to simulate API calls for rooms, amenities, offers, and experiences.
 

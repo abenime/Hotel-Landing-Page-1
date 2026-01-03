@@ -19,7 +19,7 @@ export default function Hero({ onCtaClick, secondaryTo = '/experiences' }: HeroP
             Coastal luxury, thoughtfully quiet
           </div>
           <h1 className="font-display text-4xl leading-tight text-slate-900 sm:text-5xl">
-            Seaside Aurora Hotel - crafted stays by the water
+            Abenime Hotel - crafted stays by the water
           </h1>
           <p className="max-w-2xl text-lg text-slate-600">
             Suites that open to the horizon, dining that celebrates the tide, and experiences

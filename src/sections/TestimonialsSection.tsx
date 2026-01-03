@@ -15,7 +15,7 @@ export default function TestimonialsSection({ testimonials, loading }: Testimoni
           </div>
           <h2 className="font-display text-3xl text-slate-900">Guests who lingered longer</h2>
           <p className="text-slate-600">
-            Designers, founders, and friends who made Seaside Aurora their escape.
+            Designers, founders, and friends who made Abenime their escape.
           </p>
         </div>
       </div>

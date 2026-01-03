@@ -39,11 +39,11 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ocean-100 font-semibold text-ocean-600">
-            SA
+            Ab
           </div>
           <div className="leading-tight">
             <Link className="font-display text-lg text-slate-900" to="/">
-              Seaside Aurora
+              Abenime
             </Link>
             <div className="text-xs text-slate-500">Hotel & Residences</div>
           </div>
