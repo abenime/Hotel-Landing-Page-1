@@ -1,20 +1,20 @@
 [
   {
     "id": "sail",
-    "title": "Private Sail Charter",
+    "title": "Boat sailing in the lake",
     "description": "Golden-hour sail with onboard sommelier pairings and coastal storytelling.",
-    "duration": "2.5 hours"
+    "duration": "30 mins"
   },
   {
     "id": "atelier",
-    "title": "Local Atelier Tour",
-    "description": "Meet ceramicists and textile artists shaping the region's coastal design identity.",
+    "title": "Local City Tour",
+    "description": "A Tour in the city including all it's Cultral and Religional Aspects ",
     "duration": "Half day"
   },
   {
     "id": "wellness",
     "title": "Dawn Movement & Breath",
-    "description": "Guided movement on the dune deck followed by ocean plunge and herbal tea.",
+    "description": "Guided movement on the dune deck followed by Campfire and herbal tea.",
     "duration": "75 minutes"
   }
 ]
