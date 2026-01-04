@@ -99,7 +99,7 @@ export default function RoomsSection({
                     {room.highlights.map((item) => (
                       <li key={item} className="flex items-start gap-2">
                         <span aria-hidden className="mt-1 text-ocean-500">
-                          -
+                         &gt;
                         </span>
                         <span>{item}</span>
                       </li>

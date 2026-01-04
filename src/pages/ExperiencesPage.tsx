@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
           </div>
           <h1 className="font-display text-4xl text-slate-900">Coastal days, curated</h1>
           <p className="max-w-2xl text-slate-600">
-            Sunrise rituals, atelier visits, and golden-hour sails shaped around your pace. Reserve
+            Walks Around , Tours in City, and golden-hour sails shaped around your pace. Reserve
             ahead so our concierge can personalize each moment.
           </p>
         </div>

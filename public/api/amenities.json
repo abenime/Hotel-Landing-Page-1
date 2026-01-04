@@ -22,5 +22,18 @@
     "title": "Quiet Work Lounges",
     "description": "Acoustic pods, ocean light, and crafted coffee service for guests working remotely.",
     "icon": "workspace"
+  },
+  {
+    "id": "gym",
+    "title": "Abenime Gym",
+    "description": "Fully curated , standardised, and fully functional Gym with a fresh view to the sunshine.",
+    "icon": "gym"
+  },
+  {
+    "id": "campfire",
+    "title": "CampFire",
+    "description": "Refreshing campfire around the beach in the best hours of the night with the best musics for soul.",
+    "icon": "fire"
   }
+  
 ]
