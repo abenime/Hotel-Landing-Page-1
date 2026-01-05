@@ -48,12 +48,15 @@ export default function RoomDetailPage() {
             <div className="text-xs">per night</div>
           </div>
         </div>
+        {room.description && (
+          <p className="max-w-3xl text-base text-slate-600">{room.description}</p>
+        )}
       </div>
 
       <div className="overflow-hidden rounded-3xl border border-sand-100 shadow-soft">
-        <div className="relative h-[360px] w-full">
+        <div className="relative h-[420px] w-full">
           <img
-            src={room.image}
+            src={room.gallery?.[0] ?? room.image}
             alt={room.name}
             className="h-full w-full object-cover"
             loading="lazy"
@@ -61,8 +64,12 @@ export default function RoomDetailPage() {
           <div className="absolute left-4 top-4 rounded-full bg-white/85 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-700">
             {room.availability}
           </div>
+          <div className="absolute bottom-4 right-4 rounded-full bg-slate-900/70 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
+            From {formatCurrency(room.price)} / night
+          </div>
         </div>
-        <div className="space-y-6 bg-white p-6">
+
+        <div className="space-y-8 bg-white p-6">
           <div className="flex flex-wrap gap-2">
             {room.tags.map((tag) => (
               <span
@@ -74,6 +81,27 @@ export default function RoomDetailPage() {
             ))}
           </div>
 
+          <div className="grid gap-4 rounded-2xl border border-sand-100 bg-white/70 p-4 md:grid-cols-3">
+            {[
+              { label: 'Size', value: room.size },
+              { label: 'Bed', value: room.bedDetail ?? room.beds },
+              { label: 'View', value: room.view },
+              { label: 'Sleeps', value: room.occupancy ? `${room.occupancy} guests` : undefined },
+              { label: 'Bath', value: room.baths ? `${room.baths} bath` : undefined },
+              { label: 'Check-in', value: room.checkIn },
+              { label: 'Check-out', value: room.checkOut }
+            ]
+              .filter((item) => item.value)
+              .map((item) => (
+                <div key={item.label} className="space-y-1">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    {item.label}
+                  </div>
+                  <div className="text-sm font-semibold text-slate-900">{item.value}</div>
+                </div>
+              ))}
+          </div>
+
           <div className="grid gap-3 md:grid-cols-2">
             {room.highlights.map((item) => (
               <div key={item} className="flex items-start gap-3 text-sm text-slate-700">
@@ -83,14 +111,57 @@ export default function RoomDetailPage() {
             ))}
           </div>
 
+          {room.amenities && room.amenities.length > 0 && (
+            <div className="space-y-2">
+              <div className="text-xs font-semibold uppercase tracking-wide text-ocean-600">
+                In-suite amenities
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {room.amenities.map((amenity) => (
+                  <span
+                    key={amenity}
+                    className="rounded-full bg-sand-100 px-3 py-1 text-xs font-semibold text-slate-700"
+                  >
+                    {amenity}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {room.gallery && room.gallery.length > 1 && (
+            <div className="space-y-3">
+              <div className="text-xs font-semibold uppercase tracking-wide text-ocean-600">
+                Gallery
+              </div>
+              <div className="grid gap-3 md:grid-cols-3">
+                {room.gallery.slice(0, 3).map((img, index) => (
+                  <div key={img} className="overflow-hidden rounded-2xl border border-sand-100">
+                    <img
+                      src={img}
+                      alt={`${room.name} photo ${index + 1}`}
+                      className="h-40 w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="flex flex-wrap items-center justify-between gap-4 border-t border-sand-100 pt-4 text-sm text-slate-700">
             <div className="space-y-1">
               <div className="font-semibold text-slate-900">Included</div>
-              <div>Breakfast for two, evening turndown, and concierge messaging.</div>
+              <div>Breakfast for two, evening turndown, and dedicated host messaging.</div>
             </div>
-            <Link className="btn-ghost" to="/offers">
-              View current offers
-            </Link>
+            <div className="flex gap-2">
+              <Link className="btn-ghost" to="/offers">
+                View offers
+              </Link>
+              <a className="btn-primary" href="#booking">
+                Book this suite
+              </a>
+            </div>
           </div>
         </div>
       </div>

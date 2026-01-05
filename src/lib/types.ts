@@ -8,6 +8,15 @@ export type Room = {
   tags: string[];
   highlights: string[];
   availability: string;
+  description?: string;
+  bedDetail?: string;
+  view?: string;
+  occupancy?: number;
+  baths?: number;
+  amenities?: string[];
+  gallery?: string[];
+  checkIn?: string;
+  checkOut?: string;
 };
 
 export type Amenity = {

@@ -1,46 +1,114 @@
 [
   {
-    "id": "Abenime-suite",
-    "name": "Abenime Signature Suite",
-    "price": 620,
-    "size": "74 m²",
-    "beds": "1 King + Lounge",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
-    "tags": ["Oceanfront", "Private terrace", "Butler service"],
-    "highlights": ["Panoramic sea view", "In-room breakfast", "Sunken tub"],
-    "availability": "8 rooms available"
+    "id": "fs-bora-bungalow",
+    "name": "Four Seasons Bora Bora — Overwater Bungalow",
+    "price": 1850,
+    "size": "95 m²",
+    "beds": "1 King + Sofa",
+    "bedDetail": "One king bed and queen sofa bed",
+    "view": "Otemanu peak and lagoon",
+    "occupancy": 3,
+    "baths": 1,
+    "image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80"
+    ],
+    "tags": ["Overwater", "Private deck", "Butler"],
+    "highlights": [
+      "Swim-out ladder to lagoon",
+      "Sunken tub with reef views",
+      "Breakfast canoe delivery"
+    ],
+    "amenities": ["Plunge pool", "Nespresso", "Evening turndown", "Twice-daily housekeeping"],
+    "availability": "2 villas left",
+    "description": "Signature overwater bungalow facing Mount Otemanu with a private plunge pool, expansive sun deck, and direct lagoon access.",
+    "checkIn": "3:00 PM",
+    "checkOut": "12:00 PM"
   },
   {
-    "id": "coastal-king",
-    "name": "Coastal King Retreat",
-    "price": 410,
-    "size": "48 m²",
+    "id": "amanpulo-treetop",
+    "name": "Amanpulo — Treetop Pool Casita",
+    "price": 1450,
+    "size": "68 m²",
     "beds": "1 King",
-    "image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1600&q=80",
-    "tags": ["Sunrise view", "Balcony", "Rain shower"],
-    "highlights": ["Daily turndown", "Pillow menu", "Evening tea"],
-    "availability": "12 rooms available"
+    "bedDetail": "Canopied king bed",
+    "view": "Canopy + Sulu Sea",
+    "occupancy": 2,
+    "baths": 1,
+    "image": "https://images.unsplash.com/photo-1505692069463-5e3405e3e7ee?auto=format&fit=crop&w=1800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80"
+    ],
+    "tags": ["Private pool", "Canopy views", "Beach buggy"],
+    "highlights": [
+      "Hardwood interiors with Cebu marble",
+      "Wraparound deck with loungers",
+      "Dedicated kasambahay host"
+    ],
+    "amenities": ["Heated plunge pool", "Yamaha sound", "In-casita dining", "Evening aromatherapy"],
+    "availability": "3 casitas left",
+    "description": "Elevated casita tucked in the canopy with a heated plunge pool, polished hardwood floors, and slow views out to the Sulu Sea.",
+    "checkIn": "2:00 PM",
+    "checkOut": "12:00 PM"
   },
   {
-    "id": "garden-twin",
-    "name": "Garden Twin Residence",
-    "price": 320,
-    "size": "44 m²",
-    "beds": "2 Twins",
-    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
-    "tags": ["Courtyard", "Workspace", "Walk-in shower"],
-    "highlights": ["Quiet wing", "Soft daylight", "Italian linens"],
-    "availability": "6 rooms available"
-  },
-  {
-    "id": "skyline-loft",
-    "name": "Skyline Loft",
-    "price": 540,
-    "size": "62 m²",
+    "id": "sixsenses-zighy",
+    "name": "Six Senses Zighy Bay — Pool Villa",
+    "price": 980,
+    "size": "82 m²",
     "beds": "1 King + Daybed",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
-    "tags": ["Top floor", "City & sea", "Chef's bar"],
-    "highlights": ["Sunset cocktails", "Design lighting", "Acoustic panels"],
-    "availability": "4 rooms available"
+    "bedDetail": "One king bed and Omani daybed",
+    "view": "Beachfront bay",
+    "occupancy": 3,
+    "baths": 1,
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505692069463-5e3405e3e7ee?auto=format&fit=crop&w=1800&q=80"
+    ],
+    "tags": ["Stone courtyard", "Private pool", "Majlis"],
+    "highlights": [
+      "Shaded outdoor majlis lounge",
+      "Musandam stone walls for privacy",
+      "Outdoor shower + deep tub"
+    ],
+    "amenities": ["Wine fridge", "Ice maker", "Beach club access", "24/7 GEM host"],
+    "availability": "5 villas available",
+    "description": "Beachfront pool villa framed by Musandam mountains, with a shaded courtyard, outdoor majlis, and direct sand access.",
+    "checkIn": "3:00 PM",
+    "checkOut": "12:00 PM"
+  },
+  {
+    "id": "rosewood-harbour",
+    "name": "Rosewood Hong Kong — Harbour View Suite",
+    "price": 760,
+    "size": "76 m²",
+    "beds": "1 King",
+    "bedDetail": "Rosewood signature king",
+    "view": "Victoria Harbour",
+    "occupancy": 2,
+    "baths": 1,
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1800&q=80",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb210af?auto=format&fit=crop&w=1800&q=80"
+    ],
+    "tags": ["Skyline", "Club access", "Soaker tub"],
+    "highlights": [
+      "Floor-to-ceiling harbour panorama",
+      "Club 53 Manor access",
+      "Twin vanities + walk-in shower"
+    ],
+    "amenities": ["In-room bar", "BOSE sound", "Valet pressing", "Evening turndown"],
+    "availability": "7 suites available",
+    "description": "Harbour-facing suite with floor-to-ceiling glass, sculptural soaking tub, and access to the Manor Club for evening cocktails.",
+    "checkIn": "3:00 PM",
+    "checkOut": "12:00 PM"
   }
 ]
