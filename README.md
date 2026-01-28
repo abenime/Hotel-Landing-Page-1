@@ -51,8 +51,3 @@ Update these files to change what the page renders. Calls are intentionally dela
 - `npm run preview` — preview production build
 - `npm run lint` — run ESLint
 - `npm run format` — format with Prettier
-
-## Notes
-
-- All data and imagery are placeholders; replace with real assets before launch.
-- No authentication or payments are implemented; this is a front-end showcase.
